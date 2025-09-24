@@ -2,31 +2,70 @@
     "collections": {
         "lectures/fa25": {
             "publication_schema": {
-                "required_artifacts": [
-                    "slides"
-                ],
+                "required_artifacts": [],
                 "optional_artifacts": [],
                 "metadata_schema": {
+                    "optional_keys": {
+                        "videos": {
+                            "element_schema": {
+                                "required_keys": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "dict"
+                            },
+                            "type": "list",
+                            "nullable": true
+                        },
+                        "note": {
+                            "type": "string"
+                        }
+                    },
                     "required_keys": {
+                        "reading": {
+                            "required_keys": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "dict",
+                            "nullable": true
+                        },
+                        "date": {
+                            "type": "date"
+                        },
                         "topic": {
                             "type": "string"
-                        },
-                        "due": {
-                            "type": "datetime"
-                        },
-                        "released": {
-                            "type": "datetime"
                         },
                         "number": {
                             "type": "integer"
                         }
-                    },
-                    "type": "dict"
+                    }
                 },
                 "allow_unspecified_artifacts": false,
                 "is_ordered": true
             },
-            "publications": {}
+            "publications": {
+                "lec01": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 1 - Introduction to Data Science",
+                            "url": "http://notes.dsc80.com/content/01/introduction.html"
+                        },
+                        "date": "2025-09-25",
+                        "topic": "Introduction",
+                        "number": 1
+                    },
+                    "artifacts": {}
+                }
+            }
         },
         "projects": {
             "publication_schema": {
