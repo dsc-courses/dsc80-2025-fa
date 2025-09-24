@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Do not cache this page -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/style.css">
+
+        <!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Emoji -->
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <title>DSC 80</title>
+        </head>
+
+        <body>
+            <!-- responsive sidebar code comes from https://stackoverflow.com/a/48477019 -->
+            <div class="container-fluid h-100">
+                <div class="nav row wrapper min-vh-100 flex-column flex-sm-row">
+                    <aside class="col-12 col-sm-3 p-0 bg-light flex-shrink-1">
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light align-items-end flex-sm-column flex-row">
+                            <a class="navbar-brand" href="#"><i class="fa fa-bullseye fa-fw"></i>DSC 80</a>
+                            <a href class="navbar-toggler" data-toggle="collapse" data-target=".sidebar">
+                                <span class="navbar-toggler-icon"></span>
+                            </a>
+                            <div class="collapse navbar-collapse sidebar">
+                                <ul class="flex-column navbar-nav w-100 justify-content-between">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./index.html"><span class="">🗓️ Schedule</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./syllabus.html"><span class="">📜 Syllabus</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./office_hours.html"><span class="">👨‍🏫️ Office Hours</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="http://notes.dsc80.com"><span class="">📖 Textbook</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="http://github.com/dsc-courses/dsc80-2025-fa"><span class="">👩‍💻 GitHub</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./tech_support.html"><span class="">❓ Tech Support</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://campuswire.com/c/G6898BD78/feed"><span class="">💬 Campuswire</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://www.gradescope.com/courses/1143665"><span class="">💯 Gradescope</span></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+                    <main class="col bg-faded main-content">
+
+                        <div class="site-title">
+                            <h1>DSC 80 &ndash; The Practice and Application of Data Science</h1>
+                            <hr>
+                        </div>
+
+
+                        <h1 id="tech-support">🙋‍♂️ Tech Support</h1>
+<p>This page will help you set up your computer for working on DSC 80 assignments, including installing <code>mamba</code>, creating a <code>conda</code> environment, using Git, and choosing a text editor or IDE.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<div class="toc">
+<ul>
+<li><a href="#tech-support">🙋‍♂️ Tech Support</a><ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#environments-and-package-managers">Environments and Package Managers</a></li>
+<li><a href="#replicating-the-gradescope-environment">Replicating the Gradescope Environment</a><ul>
+<li><a href="#step-1-install-mamba">Step 1: Install mamba</a></li>
+<li><a href="#step-2-download-environmentyml">Step 2: Download environment.yml</a></li>
+<li><a href="#step-3-create-a-new-conda-environment">Step 3: Create a new conda environment</a></li>
+<li><a href="#step-4-activate-the-environment">Step 4: Activate the environment</a></li>
+</ul>
+</li>
+<li><a href="#working-on-assignments">Working on Assignments</a><ul>
+<li><a href="#activating-the-conda-environment">Activating the conda environment</a></li>
+<li><a href="#using-git">Using Git</a></li>
+<li><a href="#choosing-a-text-editor-or-ide">Choosing a Text Editor or IDE</a></li>
+<li><a href="#using-vscode-to-run-jupyter-notebooks">Using VSCode to Run Jupyter Notebooks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>In DSC 10, you worked on assignments on DataHub, a computing platform that already had all of the Python packages you needed installed. But in the real world, you'll be expected to set up and maintain a Python environment locally – that is, on your own computer – and so that's what we'll have you do here. <strong>That's right – no DataHub!</strong> You already have experience writing and running code locally from DSC 20 and DSC 30; setting up your environment for DSC 80 will be slightly more involved than it was there, but most of these steps only need to be done once.</p>
+<p>There has been a lot written about how to set up a Python environment, so we won't reinvent the wheel. This page will only be a summary; Google will be your main resource. But always feel free to come to a staff member's office hours if you have a question about setting up your environment, using Git, or similar — we're here to help.</p>
+<hr />
+<p><a href="https://www.loom.com/share/0ea254b85b2745e59322b5e5a8692e91?sid=b77c5c2d-0c24-40fb-8cfc-8574d49d9019">This video</a> walks through most of the steps here, but it's <strong>not</strong> a substitute for reading this page carefully.</p>
+<div style="position: relative; padding-bottom: 64.92335437330928%; height: 0;"><iframe src="https://www.loom.com/embed/0ea254b85b2745e59322b5e5a8692e91?sid=96bb8188-9783-4878-bc1a-5f6946b20a61" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<hr />
+<h2 id="environments-and-package-managers">Environments and Package Managers</h2>
+<p>For this class, the software you'll need includes Python 3.12, a few specific Python packages, Git, and a text editor.</p>
+<p>Gradescope has an <strong>environment</strong> which it uses to autograde your work. You can think of an environment as a combination of a Python version and <em>specific</em> versions of Python packages that is isolated from the rest of your computer. In practice, developers create different environments for different projects, so that they can use different versions of packages in different projects. When you work as part of a team of software developers and data scientists in the "real world", you'll usually be expected to set up your development environment to match the environment that your team uses so that you can be sure that your code behaves the same way as it does for everyone else on your team.</p>
+<p>In DSC 80, we're going to have you replicate the environment Gradescope has on your computer. The reason for this is so that your code behaves the same when you submit it to Gradescope as it does when you work on it on your computer. For example, our Gradescope environment uses <code>numpy</code> version <code>1.21.2</code>; if you install a different version of <code>numpy</code> on your computer, for example, you might see different results than Gradescope sees.</p>
+<p>How do you install packages, then? <code>pip</code> is a common choice, but even though it's widely used, it lacks built-in support for creating isolated environments. This limitation makes it challenging to maintain version consistency and avoid conflicts between packages. <strong>Consequently, we do not recommend relying solely on <code>pip install</code> for environment management</strong>, as it may inadvertently introduce incompatible package versions.</p>
+<p><code>conda</code>, on the other hand, is a powerful tool that not only installs packages but also manages environments effortlessly. It allows you to create isolated environments and ensures compatibility among the packages within those environments.</p>
+<p><strong>The tool we're going to use, though, is <code>mamba</code>, which is a wrapper around <code>conda</code> that is designed to be much faster.</strong> If you should need to install a new Python package, you can use the <code>mamba</code> command (once you have <code>mamba</code> installed). Inside the Terminal, type <code>mamba install &lt;package_name&gt;</code>, where <code>&lt;package_name&gt;</code> is replaced by the name of the package you want to install, and hit enter. <strong>However, you should only run <code>mamba install</code> once you've entered your <code>dsc80</code> environment</strong> – more on this below.</p>
+<hr />
+<h2 id="replicating-the-gradescope-environment">Replicating the Gradescope Environment</h2>
+<p>Below, we're going to walk you through how to create the same environment that Gradescope uses.</p>
+<h3 id="step-1-install-mamba">Step 1: Install <code>mamba</code></h3>
+<p>The way to do this depends on whether you're on a Unix-like platform (macOS or Linux) or on Windows.</p>
+<p><strong>Unix-like platforms (macOS or Linux)</strong>:</p>
+<ol>
+<li>
+<p>Download the <code>mamba</code> installer. To do this, open your Terminal and run:</p>
+<p><code>curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"</code></p>
+<p>This will place a file named something like <code>Miniforge3-Darwin-arm64.sh</code> wherever you ran the command. If you get an error saying <code>command not found: curl</code>, replace <code>curl -L -O</code> with <code>wget</code> and re-run the same command.</p>
+</li>
+<li>
+<p>Run the installer. To do this, immediately after the last command, run:</p>
+<p><code>bash Miniforge3-$(uname)-$(uname -m).sh</code></p>
+</li>
+</ol>
+<!-- or 
+
+`wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+bash Miniforge3-$(uname)-$(uname -m).sh` -->
+
+<p><strong>Windows</strong>:</p>
+<ol>
+<li>Download the Windows install script from <a href="https://github.com/conda-forge/miniforge#miniforge">here</a> under "Miniforge3." The file should be named <code>Miniforge3-Windows-x86_64.exe</code> or similar.</li>
+<li>Run the downloaded <code>.exe</code> file. Follow the prompts, taking note of the options to "Create start menu shortcuts" and "Add Miniforge3 to my PATH environment variable". The latter is not selected by default due to potential conflicts with other software. Without Miniforge3 on the path, the most convenient way to use the installed software (such as commands <code>mamba</code>) will be via the "Miniforge Prompt" installed to the start menu.</li>
+<li>Run the following command in your Anaconda Prompt:
+    <code>start /wait "" Miniforge3-Windows-x86_64.exe /InstallationType=JustMe /RegisterPython=0 /S /D=%UserProfile%\Miniforge3</code></li>
+</ol>
+<p>Make sure to run this command in the same folder that <code>Miniforge3-Windows-x64_64.exe</code> is! If that's not the folder that your command line interface is looking in, you'll need to <code>cd</code> there first, e.g. <code>cd C:\Users\surajrampure\Desktop</code> if that file is on your Desktop.</p>
+<h3 id="step-2-download-environmentyml">Step 2: Download <a href="https://github.com/dsc-courses/dsc80-2025-fa/blob/gh-pages/static/environment.yml"><code>environment.yml</code></a></h3>
+<p><a href="https://github.com/dsc-courses/dsc80-2025-fa/blob/gh-pages/static/environment.yml">This file</a> contains the necessary details to configure your environment. If you take a look at it, you'll see that it contains a specific Python version (<code>python=3.12</code>) along with specific package versions (like <code>pandas==2.2.3</code> and <code>requests==2.32.3</code>, for example).</p>
+<h3 id="step-3-create-a-new-conda-environment">Step 3: Create a new <code>conda</code> environment</h3>
+<p>Yes, we said <code>conda</code> environment, even though we're using <code>mamba</code> to create it.</p>
+<p>To create the environment, in your Terminal or Anaconda Prompt, run:</p>
+<p><code>mamba env create -f environment.yml</code></p>
+<p>Note that if you put <code>environment.yml</code> in your Downloads or Desktop folder, you should replace <code>environment.yml</code> with the path to the file, for example: <code>mamba env create -f /Users/yourusername/Desktop/environment.yml</code>. Otherwise, you might get an error saying <code>environment.yml</code> does not exist.</p>
+<h3 id="step-4-activate-the-environment">Step 4: Activate the environment</h3>
+<p>To do so, run:</p>
+<p><code>mamba activate dsc80</code></p>
+<p><em>Where did the name <code>dsc80</code> come from, you might ask? We defined it for you at the top of <code>environment.yml</code> with <code>name: dsc80</code>.</em></p>
+<p>If you get an error saying <code>mamba</code> isn't defined, try closing and reopening your Terminal first and then rerunning the command.</p>
+<hr />
+<h2 id="working-on-assignments">Working on Assignments</h2>
+<h3 id="activating-the-conda-environment">Activating the <code>conda</code> environment</h3>
+<p>The setup instructions above only need to be run once. Now, every time you work on DSC 80 assignments, all you need to do is run</p>
+<p><code>mamba activate dsc80</code></p>
+<p>in your Terminal or Anaconda Prompt. If you need to install any packages into your <code>dsc80</code> environment using <code>mamba install</code>, make sure to activate the environment first.</p>
+<p>If you’re using VSCode, you should select the Python kernel corresponding to the <code>dsc80</code> environment to use it.</p>
+<p>To open a Jupyter Notebook, use the <code>jupyter notebook</code> command in your Terminal or Anaconda Prompt.</p>
+<h3 id="using-git">Using Git</h3>
+<p>All of our course materials, including your assignments, are hosted on
+GitHub in <a href="https://github.com/dsc-courses/dsc80-2025-fa">this Git repository</a>. This means that you'll need to download and use
+<a href="https://git-scm.com/">Git</a> in order to work with the course
+materials.</p>
+<p>Git is a <em>version control system</em>. In short, it is used to keep track of
+the history of a project. With Git, you can go back in time to any
+previous version of your project, or even work on two different versions
+(or "branches") in parallel and "merge" them together at some point
+in the future. We'll stick to using the basic features of Git in DSC
+80.</p>
+<p>There are Git GUIs, and you can use them for this class. You can also
+use the command-line version of Git. To get started, you'll need to
+"clone" the course repository. The command to do this is:</p>
+<pre><code>git clone https://github.com/dsc-courses/dsc80-2025-fa
+</code></pre>
+<p>This will copy the repository to a directory on your computer. You should only need to do this once.</p>
+<p>Moving forward, to bring in the latest version of the repository, in your local repository, run:</p>
+<p><code>git pull</code></p>
+<p>This will <strong>not</strong> overwrite your work. In fact, Git is designed to make it very difficult
+to lose work (although it's still possible!).</p>
+<p><strong>Merge Conflicts</strong></p>
+<p>You might face issues when using <code>git pull</code> regarding merge issues and branches. This is caused by files being updated on your side while we are also changing the <a href="https://github.com/dsc-courses/dsc80-2025-fa">Git repository</a> by pushing new assignments on our side. Here are some steps you can follow to resolve them:</p>
+<p>NOTE: Whenever working with GitHub pulls, merges, etc., it's a good idea to save your important work locally so that if you accidentally overwrite your files you still have the work saved. <strong>Save your work locally before following the steps below.</strong></p>
+<ol>
+<li><code>git status</code> shows the current state of your Git working directory and staging area. It's a good sanity check to start with. You will probably see your project and lab files that you have worked on.</li>
+<li><code>git add .</code>  will add all your files to be ready to commit.</li>
+<li><code>git commit -m "some message of your choice"</code>  will commit the files, with some description in the quotations. This can be whatever you want, it won't matter.</li>
+</ol>
+<p>At this stage, if you <code>git pull</code>, it should work. You should double-check that you have new files, as well as that your old files are unchanged. If they are changed then you should be able to just copy-paste from your local backup. If this does <strong>not</strong> work then you may have <strong>merge conflicts</strong>, follow the next steps:</p>
+<ol>
+<li><code>git checkout --theirs [FILENAME]</code>  will tell git that whenever a conflict occurs in <code>[FILENAME]</code> to keep your version. Run this for each file with a conflict.</li>
+<li><code>git add [FILENAME]</code> to mark each file with a conflict as resolved. </li>
+<li><code>git rebase --continue</code> or <code>git merge</code>, depending on the setup. </li>
+</ol>
+<h3 id="choosing-a-text-editor-or-ide">Choosing a Text Editor or IDE</h3>
+<p>In this class, you will need to use a combination of editors for doing
+your assignments: The Python files should be developed with a text editor (for
+syntax highlighting and running doctests) and the data/results should be
+analyzed/presented in Jupyter Notebooks. Below is an incomplete list of
+IDEs you might want to try. For more information about them, feel free
+to ask the course staff.</p>
+<ul>
+<li>
+<p>The <a href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> text
+    editor: see <a href="#jupyterlab">below</a>. Can be used to edit both notebooks and .py files.</p>
+</li>
+<li>
+<p><a href="https://code.visualstudio.com/">VSCode</a>: Microsoft Visual Studio Code. Currently very popular, and can also be used to edit both notebooks and .py files.</p>
+</li>
+<li>
+<p><a href="https://www.sublimetext.com/">sublime</a>: A favorite text editor of
+    hackers, famous for its multiple cursors. A good, general-purpose
+    choice.</p>
+</li>
+<li>
+<p><a href="https://atom.io/">atom</a>: GitHub's editor. Pretty nice fully
+    featured IDE. Can only work locally.</p>
+</li>
+<li>
+<p><a href="https://www.jetbrains.com/pycharm/">PyCharm (IntelliJ)</a>: Those who
+    feel at home coding Java. Can only work locally.</p>
+</li>
+<li>
+<p><a href="https://www.nano-editor.org/">nano</a>: available on most unix
+    commandlines (e.g. DataHub Terminal). If you use this for more than
+    changing a word or two, you'll hate your life.</p>
+</li>
+<li>
+<p><a href="https://neovim.io/">(neo)vim</a>: lightweight, productive text-editor
+    that might be the most efficient way to edit text, if you can ever
+    learn how to use it. Justin Eldridge's text editor of choice.</p>
+</li>
+<li>
+<p><a href="https://www.gnu.org/software/emacs/">emacs</a>: A text editor for
+    those who prefer a life of endless toil. Endlessly customizable, it
+    promises everything, but you're never good enough to deliver.</p>
+</li>
+</ul>
+<h3 id="using-vscode-to-run-jupyter-notebooks">Using VSCode to Run Jupyter Notebooks</h3>
+<p>Many students like to use VSCode to edit Jupyter Notebooks. If that's you, then you'll need to make sure to activate your <code>dsc80</code> conda environment within your notebook in VSCode. Here's how to do that.</p>
+<ol>
+<li>Open a Juypter Notebook in VSCode.</li>
+<li>Click "Select Kernel" in the top right corner of the window.
+    <center><img src="../assets/images/ts-select-kernel.png" width=150></center></li>
+<li>Click "Python Environments" in the toolbar that appears in the middle.
+    <center><img src="../assets/images/ts-python-environments.png" width=300></center></li>
+<li>Finally, click "dsc80 (Python 3.12.6)".
+    <center><img src="../assets/images/ts-dsc80-conda.png" width=500></center></li>
+</ol>
+<!-- ## Working Remotely via DataHub
+
+Working *remotely* means using an environment that someone else set up
+for you on a computer far, far away, usually through the browser. This
+is the way you wrote code in DSC 10, for instance. There's nothing
+wrong with this, *per se*, and it is simpler, but you should think of
+this option as developing with "training wheels". Eventually, you will
+need to learn how to set up your own Python environment, and now is as
+good a time as any.
+
+There are servers available to use at
+[datahub.ucsd.edu](datahub.ucsd.edu). These are a lot like the
+DataHub servers that you used in DSC 10, however they are customized
+for this course. After logging in with your UCSD account, you will be
+taken the familiar juptyer landing page. The server you are logged into
+has \~4GB of RAM available, and has Python with all the necessary
+packages.
+
+### ⚠️ Warning!
+
+DataHub outages are not uncommon, and they can be expected to occur once
+or twice per quarter (sometimes more). Outages typically last for a few
+hours or less, but they can prevent you from working on your assignment.
+
+Since we do not manage DataHub, we cannot make any guarantees about its
+availability. DataHub crashes that prevent you from turning in or
+working on your assignment near the deadline are typically handled via
+the usual [slip day](../syllabus) mechanism. If DataHub
+has been down for a long time (more than 24 hours), let us know and
+we'll consider a blanket extension -- though this has very rarely
+(never?) happened.
+
+Our advice is to use a local development environment, or to at least
+have one as available as a backup option. If you decide to use DataHub
+as your first choice, you should keep an extra slip day or two in
+reserve in case the server crashes.
+
+### Installing or Updating Python Packages
+
+To update a package (e.g. `pandas`) on DataHub, you'll need to use the
+command line. To do this, open "New \> Terminal" and type:
+
+`mamba install --user --upgrade pandas`
+
+followed by the enter key to run the command.
+
+One package that you'll likely need to install is `otter-grader`. This
+package provides the autograder that checks your answers in the labs and
+projects.
+
+### JupyterLab
+
+The remote servers have a development environment installed on them,
+however, it's non-intuitive how to access it. Once on the landing page,
+the url should read something like:
+
+`https://datahub.ucsd.edu/user/USER/tree`
+
+You can access the IDE (integrate development environment) by changing
+"tree" to "lab". This brings up JupyterLab. The url should look
+something like this:
+
+`https://datahub.ucsd.edu/user/USER/lab`
+
+For more information on this IDE, you can see read about it here. From
+within JupyterLab, you can:
+
+-   Use a Python console
+-   Run Jupyter notebooks
+-   Use a terminal (e.g. to pull git repos)
+-   Develop Python code in .py files
+
+### Git
+
+Whether you work locally or use DataHub, you'll need to pull assignments from GitHub. If you work on DataHub, you'll **have** to pull from GitHub using the command-line. To do this, open "New \> Terminal" and, to get the course repository for the first time, type:
+
+    git clone https://github.com/dsc-courses/dsc80-2023-fa
+
+Then, open up the file-tree in the original Jupyter tab, and you should see all the
+course files now there. If you have already cloned the repository, and
+just want to get the latest files, type `git pull` and you should see
+the updated files.
+
+### Troubleshooting DataHub
+
+**What if I accidentally clicked a different class instead of DSC 80 when logging into DataHub, or what if my DataHub doesn't load?**
+
+1. If you are already logged into DataHub, click "Control Panel" in the top right. (If your DataHub never launched in the first place, proceed to the next step.)
+
+2. In the toolbar at appears at [datahub.ucsd.edu](https://datahub.ucsd.edu), click "Services" then click "manual-resetter", then click "Reset". If a pop-up box appears, that's okay.
+
+3. Log back into DataHub again and it should allow you to select a course – select DSC 80. -->
+                    </main>
+                </div>
+            </div>
+        </body>
+</html>
