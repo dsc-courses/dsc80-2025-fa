@@ -144,9 +144,7 @@
         },
         "labs": {
             "publication_schema": {
-                "required_artifacts": [
-                    "assignment"
-                ],
+                "required_artifacts": [],
                 "optional_artifacts": [],
                 "metadata_schema": {
                     "required_keys": {
@@ -173,98 +171,8 @@
                     "metadata": {
                         "topic": "Introduction",
                         "due": "2025-10-06 23:59:00",
-                        "released": "2025-09-29 23:59:00",
+                        "released": "2025-09-26 00:00:00",
                         "number": 1
-                    },
-                    "artifacts": {}
-                },
-                "lab02": {
-                    "metadata": {
-                        "topic": "Pandas",
-                        "due": "2025-10-13 23:59:00",
-                        "released": "2025-10-06 23:59:00",
-                        "number": 2
-                    },
-                    "artifacts": {}
-                },
-                "lab03": {
-                    "metadata": {
-                        "topic": "Hypothesis Testing",
-                        "due": "2025-10-20 23:59:00",
-                        "released": "2025-10-13 23:59:00",
-                        "number": 3
-                    },
-                    "artifacts": {}
-                },
-                "lab04": {
-                    "metadata": {
-                        "topic": "Hypothesis Testing",
-                        "due": "2025-10-27 23:59:00",
-                        "released": "2025-10-20 23:59:00",
-                        "number": 4
-                    },
-                    "artifacts": {}
-                },
-                "lab05": {
-                    "metadata": {
-                        "topic": "Missingness and Imputation",
-                        "due": "2025-11-03 23:59:00",
-                        "released": "2025-10-27 23:59:00",
-                        "number": 5
-                    },
-                    "artifacts": {}
-                },
-                "lab06": {
-                    "metadata": {
-                        "topic": "HTTP and HTML",
-                        "due": "2025-11-10 23:59:00",
-                        "released": "2025-11-03 23:59:00",
-                        "number": 6
-                    },
-                    "artifacts": {}
-                },
-                "lab07": {
-                    "metadata": {
-                        "topic": "Regex",
-                        "due": "2025-11-17 23:59:00",
-                        "released": "2025-11-10 23:59:00",
-                        "number": 7
-                    },
-                    "artifacts": {}
-                },
-                "lab08": {
-                    "metadata": {
-                        "topic": "Features",
-                        "due": "2025-11-24 23:59:00",
-                        "released": "2025-11-17 23:59:00",
-                        "number": 8
-                    },
-                    "artifacts": {}
-                },
-                "lab09": {
-                    "metadata": {
-                        "topic": "Sklearn",
-                        "due": "2022-12-01 23:59:00",
-                        "released": "2025-11-24 23:59:00",
-                        "number": 9
-                    },
-                    "artifacts": {}
-                },
-                "lab_project3": {
-                    "metadata": {
-                        "topic": "Regex",
-                        "due": "2025-12-08 23:59:00",
-                        "released": "2025-12-01 23:59:00",
-                        "number": 10
-                    },
-                    "artifacts": {}
-                },
-                "midterm-redemption": {
-                    "metadata": {
-                        "topic": "Regex",
-                        "due": "2025-12-15 23:59:00",
-                        "released": "2025-12-08 23:59:00",
-                        "number": 11
                     },
                     "artifacts": {}
                 }
