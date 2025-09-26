@@ -14,7 +14,6 @@ dependencies:
   - matplotlib-inline=0.1.7
   - nbclassic=1.1.0
   - nbconvert=7.16.4
-  - notebook=7.2.2
   - numpy=2.1.1
   - pandas=2.2.3
   - plotly=5.24.1
