@@ -154,6 +154,158 @@
             },
             "publications": {}
         },
+        "worksheets": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "worksheet.pdf",
+                    "solutions.pdf"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "required_keys": {
+                        "date": {
+                            "type": "date"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "number": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01": {
+                    "metadata": {
+                        "date": "2025-09-30",
+                        "topic": "Pandas",
+                        "number": 1
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "worksheets/01/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "worksheets/01/solutions.pdf"
+                        }
+                    }
+                },
+                "02": {
+                    "metadata": {
+                        "date": "2025-10-07",
+                        "topic": "Aggregating",
+                        "number": 2
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "worksheets/02/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "worksheets/02/solutions.pdf"
+                        }
+                    }
+                },
+                "03": {
+                    "metadata": {
+                        "date": "2025-10-14",
+                        "topic": "Hypothesis Testing",
+                        "number": 3
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "worksheets/03/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "worksheets/03/solutions.pdf"
+                        }
+                    }
+                },
+                "04": {
+                    "metadata": {
+                        "date": "2025-10-21",
+                        "topic": "Missingness",
+                        "number": 4
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "worksheets/04/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "worksheets/04/solutions.pdf"
+                        }
+                    }
+                },
+                "05": {
+                    "metadata": {
+                        "date": "2025-10-28",
+                        "topic": "Imputation and Test Statistics",
+                        "number": 5
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "worksheets/05/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "worksheets/05/solutions.pdf"
+                        }
+                    }
+                },
+                "06": {
+                    "metadata": {
+                        "date": "2025-11-04",
+                        "topic": "HTML and Regex",
+                        "number": 6
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "worksheets/06/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "worksheets/06/solutions.pdf"
+                        }
+                    }
+                },
+                "07": {
+                    "metadata": {
+                        "date": "2025-11-11",
+                        "topic": "Models and Text Data",
+                        "number": 7
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "worksheets/07/worksheet.pdf"
+                        }
+                    }
+                },
+                "08": {
+                    "metadata": {
+                        "date": "2025-11-18",
+                        "topic": "Model Evaluation and Features",
+                        "number": 8
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "worksheets/08/worksheet.pdf"
+                        }
+                    }
+                },
+                "09": {
+                    "metadata": {
+                        "date": "2025-11-25",
+                        "topic": "More ML Models",
+                        "number": 9
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "worksheets/09/worksheet.pdf"
+                        }
+                    }
+                }
+            }
+        },
         "labs": {
             "publication_schema": {
                 "required_artifacts": [],
