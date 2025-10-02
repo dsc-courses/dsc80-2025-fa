@@ -76,6 +76,18 @@
                         "number": 2
                     },
                     "artifacts": {}
+                },
+                "lec03": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapters 2 and 3 - Introduction to Data Science",
+                            "url": "https://notes.dsc80.com/content/02/introduction.html"
+                        },
+                        "date": "2025-10-02",
+                        "topic": "Aggregating",
+                        "number": 3
+                    },
+                    "artifacts": {}
                 }
             }
         },
