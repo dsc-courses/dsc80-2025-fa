@@ -93,9 +93,7 @@
         },
         "projects": {
             "publication_schema": {
-                "required_artifacts": [
-                    "assignment"
-                ],
+                "required_artifacts": [],
                 "optional_artifacts": [],
                 "metadata_schema": {
                     "required_keys": {
@@ -125,14 +123,14 @@
                 "is_ordered": true
             },
             "publications": {
-                "proj03": {
+                "proj01": {
                     "metadata": {
-                        "checkpoint_due": "2022-11-17 23:59:00",
-                        "checkpoint_released": "2022-11-10 23:59:00",
-                        "topic": "Language Models",
-                        "due": "2022-11-28 23:59:00",
-                        "released": "2022-11-18 23:59:00",
-                        "number": 4
+                        "checkpoint_due": "2025-10-09 23:59:00",
+                        "checkpoint_released": "2025-10-02 00:00:00",
+                        "topic": "Gradebook",
+                        "due": "2025-10-16 23:59:00",
+                        "released": "2025-10-02 00:00:00",
+                        "number": 1
                     },
                     "artifacts": {}
                 }
