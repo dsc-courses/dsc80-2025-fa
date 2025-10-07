@@ -88,6 +88,18 @@
                         "number": 3
                     },
                     "artifacts": {}
+                },
+                "lec04": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapters 2 and 3 - Introduction to Data Science",
+                            "url": "https://notes.dsc80.com/content/02/introduction.html"
+                        },
+                        "date": "2025-10-07",
+                        "topic": "Pivot Tables, Simpson's Paradox",
+                        "number": 4
+                    },
+                    "artifacts": {}
                 }
             }
         },
