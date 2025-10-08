@@ -100,6 +100,18 @@
                         "number": 4
                     },
                     "artifacts": {}
+                },
+                "lec05": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 4 - Introduction to Data Science",
+                            "url": "https://notes.dsc80.com/content/04/introduction.html"
+                        },
+                        "date": "2025-10-09",
+                        "topic": "Merging and Cleaning Data",
+                        "number": 5
+                    },
+                    "artifacts": {}
                 }
             }
         },
