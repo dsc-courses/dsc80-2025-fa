@@ -112,6 +112,18 @@
                         "number": 5
                     },
                     "artifacts": {}
+                },
+                "lec06": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 4 - Introduction to Data Science",
+                            "url": "https://notes.dsc80.com/content/04/introduction.html"
+                        },
+                        "date": "2025-10-14",
+                        "topic": "Cleaning Data, Hypothesis Testing",
+                        "number": 6
+                    },
+                    "artifacts": {}
                 }
             }
         },
