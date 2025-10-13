@@ -385,6 +385,24 @@
                         "number": 1
                     },
                     "artifacts": {}
+                },
+                "lab02": {
+                    "metadata": {
+                        "topic": "Aggregation",
+                        "due": "2025-10-13 23:59:00",
+                        "released": "2025-09-29 00:00:00",
+                        "number": 2
+                    },
+                    "artifacts": {}
+                },
+                "lab03": {
+                    "metadata": {
+                        "topic": "Cleaning and Hypothesis Testing",
+                        "due": "2025-10-20 23:59:00",
+                        "released": "2025-10-06 00:00:00",
+                        "number": 3
+                    },
+                    "artifacts": {}
                 }
             }
         },
