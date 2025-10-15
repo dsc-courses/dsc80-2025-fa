@@ -124,6 +124,18 @@
                         "number": 6
                     },
                     "artifacts": {}
+                },
+                "lec07": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 6 - Missing Data",
+                            "url": "https://notes.dsc80.com/content/06/introduction.html"
+                        },
+                        "date": "2025-10-16",
+                        "topic": "Permutation Tests, Missing Data",
+                        "number": 7
+                    },
+                    "artifacts": {}
                 }
             }
         },
