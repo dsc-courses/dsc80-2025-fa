@@ -116,6 +116,10 @@
 <li><a href="#using-vscode-to-run-jupyter-notebooks">Using VSCode to Run Jupyter Notebooks</a></li>
 </ul>
 </li>
+<li><a href="#common-issues">Common Issues</a><ul>
+<li><a href="#the-autograder-says-nameerror-name-foo_out-is-not-defined-did-you-mean-foo">The autograder says: `NameError: name 'foo_out' is not defined. Did you mean: 'foo'?</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -367,6 +371,19 @@ the updated files.
 2. In the toolbar at appears at [datahub.ucsd.edu](https://datahub.ucsd.edu), click "Services" then click "manual-resetter", then click "Reset". If a pop-up box appears, that's okay.
 
 3. Log back into DataHub again and it should allow you to select a course – select DSC 80. -->
+
+<h2 id="common-issues">Common Issues</h2>
+<h3 id="the-autograder-says-nameerror-name-foo_out-is-not-defined-did-you-mean-foo">The autograder says: `NameError: name 'foo_out' is not defined. Did you mean: 'foo'?</h3>
+<p>If you see an error like this after submitting your assignment to Gradescope, it is usually because there is some bug in your code that is preventing the autograder from running. This happens because the autograder calls a function you wrote and stores the result in <code>foo_out</code>. However, when it called your code, an exception was raised, stopping the autograder in its tracks. As a result, the variable <code>foo_out</code> was never created, and so when the autograder tries to access it, it raises a <code>NameError</code>.</p>
+<p>To fix this, <strong>start by running the validation tests in the terminal</strong> (not via the notebook!). You'll usually see one of two things:</p>
+<ul>
+<li>
+<p><strong>If you don't see any errors, or the errors you see mention <code>otter</code></strong>, it's probably an issue with your environment (i.e., one of your package versions differs from what Gradescope uses). Run <code>mamba list --export</code> and compare the versions of <code>otter-grader</code>, <code>numpy</code>, <code>pandas</code>, and <code>python</code> to what is contained in the <code>environment.yml</code> file linked above. If you see a difference, then you should recreate your <code>dsc80</code> environment by deleting it with <code>mamba env remove -n dsc80</code> and then re-running the steps above to create it again. You do not need to re-install <code>mamba</code> or Miniforge3 themselves!</p>
+</li>
+<li>
+<p><strong>If you do see an error and it has to do with <code>pandas</code> or <code>numpy</code></strong>, then it's probably a bug in your code. Look at the error message carefully to see what line of your code is causing the error, and fix it. If you're not sure how to fix it, come to office hours or post on Campuswire for help! Be sure to include the error message you see when running the validation tests in the terminal, along with the output of <code>mamba list --export</code> so we can check your package versions.</p>
+</li>
+</ul>
                     </main>
                 </div>
             </div>
