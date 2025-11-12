@@ -196,6 +196,18 @@
                         "number": 12
                     },
                     "artifacts": {}
+                },
+                "lec13": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 9 - Introduction to Regression",
+                            "url": "https://notes.dsc80.com/content/09/introduction.html"
+                        },
+                        "date": "2025-11-13",
+                        "topic": "TF-IDF and Features",
+                        "number": 13
+                    },
+                    "artifacts": {}
                 }
             }
         },
