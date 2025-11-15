@@ -21,6 +21,21 @@
         <!-- Emoji -->
         <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
 
+        <!-- MathJax -->
+        <script>
+          MathJax = {
+            tex: {
+              inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+              displayMath: [ ['$$', '$$'], ['\\[', '\\]'] ],
+              processEscapes: true
+            }
+          };
+        </script>
+
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -96,8 +111,8 @@
                         <h1 id="final-project-the-data-science-lifecycle">Final Project: The Data Science Lifecycle</h1>
 <h2 id="important-due-dates">Important Due Dates</h2>
 <ul>
-<li><strong>Checkpoint 1:</strong> Thursday, November 20th, 2025 at 11:59PM (<a href="https://www.gradescope.com/courses/1143665/assignments/7165668/">Gradescope</a>)</li>
-<li><strong>Checkpoint 2:</strong> Tuesday, December 2nd, 2025 at 11:59PM (<a href="https://www.gradescope.com/courses/1143665/assignments/7165656/">Gradescope</a>)<ul>
+<li><strong>Checkpoint 1:</strong> Thursday, November 20th, 2025 at 11:59PM (<a href="https://www.gradescope.com/courses/1143665/assignments/7166526/">Gradescope</a>)</li>
+<li><strong>Checkpoint 2:</strong> Tuesday, December 2nd, 2025 at 11:59PM (<a href="https://www.gradescope.com/courses/1143665/assignments/7166543/">Gradescope</a>)<ul>
 <li>Note: Due on Tuesday (not Thursday) because of Thanksgiving.</li>
 </ul>
 </li>
@@ -261,7 +276,7 @@ For each step, we specify what must be done in your notebook and what must go on
     <tr>
       <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;"><strong>Missingness Dependency</strong></td>
       <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;">Pick a column in the dataset with non-trivial missingness to analyze, and perform permutation tests to analyze the dependency of the missingness of this column on other columns.<br><br>Specifically, find at least one other column that the missingness of your selected column <strong>does</strong> depend on, and at least one other column that the missingness of your selected column <strong>does not</strong> depend on.<br><br><strong><em>Tip</em></strong>: Make sure you know the difference between the different types of missingness before approaching that section. Many students in the past have lost credit for mistaking one type of missingness for another.<br><br>Note that some datasets may have special requirements for this section; look at the "Special Considerations" section of your chosen dataset for more details.</td>
-      <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;">Present and interpret the results of your missingness permutation tests with respect to your data and question. Embed a <code>plotly</code> plot related to your missingness exploration; ideas include:<br>• The distribution of column $$Y$$ when column $$X$$ is missing and the distribution of column $$Y$$ when column $$X$$ is not missing, as was done in <a href="https://dsc80.com/resources/lectures/lec08/lec08.html">Lecture 8</a>.<br>• The empirical distribution of the test statistic used in one of your permutation tests, along with the observed statistic.</td>
+      <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;">Present and interpret the results of your missingness permutation tests with respect to your data and question. Embed a <code>plotly</code> plot related to your missingness exploration; ideas include:<br>• The distribution of column $Y$ when column $X$ is missing and the distribution of column $Y$ when column $X$ is not missing, as was done in <a href="https://dsc80.com/resources/lectures/lec08/lec08.html">Lecture 8</a>.<br>• The empirical distribution of the test statistic used in one of your permutation tests, along with the observed statistic.</td>
     </tr>
   </tbody>
 </table>
@@ -279,7 +294,7 @@ For each step, we specify what must be done in your notebook and what must go on
     <tr>
       <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;"><strong>Hypothesis Testing</strong></td>
       <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;">Clearly state a pair of hypotheses and perform a <strong>hypothesis test or permutation test</strong> that is not related to missingness. Feel free to use one of the example questions stated in the "Example Questions and Prediction Problems" section of your dataset's description page or pose a hypothesis test of your own.</td>
-      <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;">Clearly state your null and alternative hypotheses, your choice of test statistic and significance level, the resulting $$p$$-value, and your conclusion. Justify why these choices are good choices for answering the question you are trying to answer.<br><br><strong><em>Optional</em></strong>: Embed a visualization related to your hypothesis test in your website.<br><br><strong><em>Tip</em></strong>: When making writing your conclusions to the statistical tests in this project, <strong>never</strong> use language that implies an absolute conclusion; since we are performing statistical tests and not randomized controlled trials, we cannot prove that either hypothesis is 100% true or false.</td>
+      <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;">Clearly state your null and alternative hypotheses, your choice of test statistic and significance level, the resulting $p$-value, and your conclusion. Justify why these choices are good choices for answering the question you are trying to answer.<br><br><strong><em>Optional</em></strong>: Embed a visualization related to your hypothesis test in your website.<br><br><strong><em>Tip</em></strong>: When making writing your conclusions to the statistical tests in this project, <strong>never</strong> use language that implies an absolute conclusion; since we are performing statistical tests and not randomized controlled trials, we cannot prove that either hypothesis is 100% true or false.</td>
     </tr>
   </tbody>
 </table>
@@ -352,8 +367,8 @@ For each step, we specify what must be done in your notebook and what must go on
   <tbody>
     <tr>
       <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;"><strong>Fairness Analysis</strong></td>
-      <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;">Perform a "fairness analysis" of your Final Model from the previous step. That is, try and answer the question "does my model perform worse for individuals in Group X than it does for individuals in Group Y?", for an interesting choice of X and Y.<br><br>As always, when comparing some quantitative attribute (in this case, something like precision or RMSE) across two groups, we use a <strong>permutation test</strong>. Let's illustrate how this works with an example. Let's suppose we have a sample voter dataset with columns <code>'Name'</code>, <code>'Age'</code>, and <code>'Voted'</code>, among others. We build a classifier that predicts whether someone voted (<code>1</code>) or didn't (<code>0</code>).<br><br>Here, we'll say our two groups are<br>• "young people", people younger than 40<br>• "old people", people older than 40<br><br>Note that in this example, we manually created these groups by <strong>binarizing</strong> the <code>'Age'</code> column in our dataset, and that's fine. (Remember, the <code>Binarizer</code> transformer with a threshold of 40 can do this for us.)<br><br>For our evaluation metric, we'll choose precision. (In Week 10's lectures, we'll look at other evaluation metrics and related parity measures for classifiers; choose the one that is most appropriate to your prediction task. If you built a regression model, you cannot use classification metrics like precision or recall; instead, you must use RMSE or $$R^2$$.)<br><br>Now, we must perform a permutation test. Before doing so, we must clearly state a null and an alternative hypothesis.<br>• <strong>Null Hypothesis</strong>: Our model is fair. Its precision for young people and old people are roughly the same, and any differences are due to random chance.<br>• <strong>Alternative Hypothesis</strong>: Our model is unfair. Its precision for young people is lower than its precision for old people.<br><br>From here, you should be able to implement the necessary permutation test. The only other guidance we will provide you with is that you should <strong>not</strong> be modifying your model to produce different results when computing test statistics; use only your final fitted model from Final Model Step.</td>
-      <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;">Clearly state your choice of Group X and Group Y, your evaluation metric, your null and alternative hypotheses, your choice of test statistic and significance level, the resulting $$p$$-value, and your conclusion.<br><br><strong><em>Optional</em></strong>: Embed a visualization related to your permutation test in your website.</td>
+      <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;">Perform a "fairness analysis" of your Final Model from the previous step. That is, try and answer the question "does my model perform worse for individuals in Group X than it does for individuals in Group Y?", for an interesting choice of X and Y.<br><br>As always, when comparing some quantitative attribute (in this case, something like precision or RMSE) across two groups, we use a <strong>permutation test</strong>. Let's illustrate how this works with an example. Let's suppose we have a sample voter dataset with columns <code>'Name'</code>, <code>'Age'</code>, and <code>'Voted'</code>, among others. We build a classifier that predicts whether someone voted (<code>1</code>) or didn't (<code>0</code>).<br><br>Here, we'll say our two groups are<br>• "young people", people younger than 40<br>• "old people", people older than 40<br><br>Note that in this example, we manually created these groups by <strong>binarizing</strong> the <code>'Age'</code> column in our dataset, and that's fine. (Remember, the <code>Binarizer</code> transformer with a threshold of 40 can do this for us.)<br><br>For our evaluation metric, we'll choose precision. (In Week 10's lectures, we'll look at other evaluation metrics and related parity measures for classifiers; choose the one that is most appropriate to your prediction task. If you built a regression model, you cannot use classification metrics like precision or recall; instead, you must use RMSE or $R^2$.)<br><br>Now, we must perform a permutation test. Before doing so, we must clearly state a null and an alternative hypothesis.<br>• <strong>Null Hypothesis</strong>: Our model is fair. Its precision for young people and old people are roughly the same, and any differences are due to random chance.<br>• <strong>Alternative Hypothesis</strong>: Our model is unfair. Its precision for young people is lower than its precision for old people.<br><br>From here, you should be able to implement the necessary permutation test. The only other guidance we will provide you with is that you should <strong>not</strong> be modifying your model to produce different results when computing test statistics; use only your final fitted model from Final Model Step.</td>
+      <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;">Clearly state your choice of Group X and Group Y, your evaluation metric, your null and alternative hypotheses, your choice of test statistic and significance level, the resulting $p$-value, and your conclusion.<br><br><strong><em>Optional</em></strong>: Embed a visualization related to your permutation test in your website.</td>
     </tr>
   </tbody>
 </table>
@@ -461,7 +476,7 @@ plugins:
 <hr />
 <h2 id="submission-and-rubric">Submission and Rubric</h2>
 <h3 id="checkpoint-1-submission">Checkpoint 1 Submission</h3>
-<p>As mentioned at the top of this page, this project has two checkpoints, which is worth 1% of your overall grade. The first checkpoint is due on <strong>Thursday, November 20th, 2025</strong>. You can submit the checkpoint <a href="https://www.gradescope.com/courses/1143665/assignments/7165668/">here</a> on Gradescope.</p>
+<p>As mentioned at the top of this page, this project has two checkpoints, which is worth 1% of your overall grade. The first checkpoint is due on <strong>Thursday, November 20th, 2025</strong>. You can submit the checkpoint <a href="https://www.gradescope.com/courses/1143665/assignments/7166526/">here</a> on Gradescope.</p>
 <p>The checkpoint 1 assignment is worth 20 points, and asks you to answer the following questions:</p>
 <ol>
 <li>(2 points) Which of the three datasets did you choose? Why?</li>
@@ -470,7 +485,7 @@ plugins:
 <li>(6 points) What is the column you plan on trying to predict in Part 1, Steps 5-8? Is it a classification or regression problem?</li>
 </ol>
 <h3 id="checkpoint-2-submission">Checkpoint 2 Submission</h3>
-<p>As mentioned at the top of this page, this project has two checkpoints, which is worth 1% of your overall grade. The second one is due on <strong>Tuesday, December 2nd, 2025</strong>. You can submit the checkpoint <a href="https://www.gradescope.com/courses/1143665/assignments/7165656/">here</a> on Gradescope.</p>
+<p>As mentioned at the top of this page, this project has two checkpoints, which is worth 1% of your overall grade. The second one is due on <strong>Tuesday, December 2nd, 2025</strong>. You can submit the checkpoint <a href="https://www.gradescope.com/courses/1143665/assignments/7166543/">here</a> on Gradescope.</p>
 <p>The checkpoint 2 assignment is worth 20 points, and asks you to answer the following questions:</p>
 <ol>
 <li>(7.5 points) For step 4, what are two hypotheses you have tested, and what were the result?</li>
@@ -516,7 +531,7 @@ plugins:
       <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;">20 points</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;"><strong>Step 4: Hypothesis Testing</strong><br>• Selected relevant columns for a hypothesis or permutation test (4 points)<br>• Explicitly stated a null hypothesis (4 points)<br>• Explicitly stated an alternative hypothesis (4 points)<br>• Performed a hypothesis or permutation test (8 points)<br>• Used a valid test statistic (4 points)<br>• Computed a $$p$$-value and made a decision (4 points)</td>
+      <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;"><strong>Step 4: Hypothesis Testing</strong><br>• Selected relevant columns for a hypothesis or permutation test (4 points)<br>• Explicitly stated a null hypothesis (4 points)<br>• Explicitly stated an alternative hypothesis (4 points)<br>• Performed a hypothesis or permutation test (8 points)<br>• Used a valid test statistic (4 points)<br>• Computed a $p$-value and made a decision (4 points)</td>
       <td style="border: 1px solid #ddd; padding: 12px; vertical-align: top;">28 points</td>
     </tr>
     <tr>
