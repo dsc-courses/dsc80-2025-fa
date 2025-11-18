@@ -557,6 +557,15 @@
                         "number": 7
                     },
                     "artifacts": {}
+                },
+                "lab08": {
+                    "metadata": {
+                        "topic": "Feature Engineering",
+                        "due": "2025-11-24 23:59:00",
+                        "released": "2025-11-17 00:00:00",
+                        "number": 8
+                    },
+                    "artifacts": {}
                 }
             }
         },
