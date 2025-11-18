@@ -204,8 +204,20 @@
                             "url": "https://notes.dsc80.com/content/09/introduction.html"
                         },
                         "date": "2025-11-13",
-                        "topic": "TF-IDF and Features",
+                        "topic": "TF-IDF and Regression",
                         "number": 13
+                    },
+                    "artifacts": {}
+                },
+                "lec14": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 9 - Introduction to Regression",
+                            "url": "https://notes.dsc80.com/content/09/introduction.html"
+                        },
+                        "date": "2025-11-18",
+                        "topic": "Feature Engineering",
+                        "number": 14
                     },
                     "artifacts": {}
                 }
