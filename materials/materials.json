@@ -220,6 +220,18 @@
                         "number": 14
                     },
                     "artifacts": {}
+                },
+                "lec15": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 9 - Data Pipelines",
+                            "url": "https://notes.dsc80.com/content/09/data-pipelines.html"
+                        },
+                        "date": "2025-11-20",
+                        "topic": "Pipelines and Model Validation",
+                        "number": 15
+                    },
+                    "artifacts": {}
                 }
             }
         },
