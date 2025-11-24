@@ -232,6 +232,15 @@
                         "number": 15
                     },
                     "artifacts": {}
+                },
+                "lec16": {
+                    "metadata": {
+                        "reading": null,
+                        "date": "2025-11-25",
+                        "topic": "Cross Validation",
+                        "number": 16
+                    },
+                    "artifacts": {}
                 }
             }
         },
