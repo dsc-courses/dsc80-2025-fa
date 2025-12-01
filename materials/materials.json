@@ -241,6 +241,15 @@
                         "number": 16
                     },
                     "artifacts": {}
+                },
+                "lec17": {
+                    "metadata": {
+                        "reading": null,
+                        "date": "2025-12-02",
+                        "topic": "Decision Trees",
+                        "number": 17
+                    },
+                    "artifacts": {}
                 }
             }
         },
@@ -462,6 +471,9 @@
                     "artifacts": {
                         "worksheet.pdf": {
                             "path": "worksheets/07/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "worksheets/07/solutions.pdf"
                         }
                     }
                 },
