@@ -250,6 +250,617 @@
                         "number": 17
                     },
                     "artifacts": {}
+                },
+                "lec18": {
+                    "metadata": {
+                        "reading": null,
+                        "date": "2025-12-04",
+                        "topic": "Precision, Recall, Fairness",
+                        "number": 18
+                    },
+                    "artifacts": {}
+                }
+            }
+        },
+        "_exam_02/lectures/fa25": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "optional_keys": {
+                        "videos": {
+                            "element_schema": {
+                                "required_keys": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "dict"
+                            },
+                            "type": "list",
+                            "nullable": true
+                        },
+                        "note": {
+                            "type": "string"
+                        }
+                    },
+                    "required_keys": {
+                        "reading": {
+                            "required_keys": {
+                                "title": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "dict",
+                            "nullable": true
+                        },
+                        "date": {
+                            "type": "date"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "number": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "lec01": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 1 - Introduction to Data Science",
+                            "url": "http://notes.dsc80.com/content/01/introduction.html"
+                        },
+                        "date": "2025-09-25",
+                        "topic": "Introduction",
+                        "number": 1
+                    },
+                    "artifacts": {}
+                },
+                "lec02": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapters 2 and 3 - Introduction to Data Science",
+                            "url": "https://notes.dsc80.com/content/02/introduction.html"
+                        },
+                        "date": "2025-09-30",
+                        "topic": "Pandas",
+                        "number": 2
+                    },
+                    "artifacts": {}
+                },
+                "lec03": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapters 2 and 3 - Introduction to Data Science",
+                            "url": "https://notes.dsc80.com/content/02/introduction.html"
+                        },
+                        "date": "2025-10-02",
+                        "topic": "Aggregating",
+                        "number": 3
+                    },
+                    "artifacts": {}
+                },
+                "lec04": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapters 2 and 3 - Introduction to Data Science",
+                            "url": "https://notes.dsc80.com/content/02/introduction.html"
+                        },
+                        "date": "2025-10-07",
+                        "topic": "Pivot Tables, Simpson's Paradox",
+                        "number": 4
+                    },
+                    "artifacts": {}
+                },
+                "lec05": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 4 - Introduction to Data Science",
+                            "url": "https://notes.dsc80.com/content/04/introduction.html"
+                        },
+                        "date": "2025-10-09",
+                        "topic": "Merging and Cleaning Data",
+                        "number": 5
+                    },
+                    "artifacts": {}
+                },
+                "lec06": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 4 - Introduction to Data Science",
+                            "url": "https://notes.dsc80.com/content/04/introduction.html"
+                        },
+                        "date": "2025-10-14",
+                        "topic": "Cleaning Data, Hypothesis Testing",
+                        "number": 6
+                    },
+                    "artifacts": {}
+                },
+                "lec07": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 6 - Missing Data",
+                            "url": "https://notes.dsc80.com/content/06/introduction.html"
+                        },
+                        "date": "2025-10-16",
+                        "topic": "Permutation Tests, Missing Data",
+                        "number": 7
+                    },
+                    "artifacts": {}
+                },
+                "lec08": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 6 - Missing Data",
+                            "url": "https://notes.dsc80.com/content/06/introduction.html"
+                        },
+                        "date": "2025-10-21",
+                        "topic": "Missingness and Imputation",
+                        "number": 8
+                    },
+                    "artifacts": {}
+                },
+                "lec09": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 7 - Collecting Data",
+                            "url": "https://notes.dsc80.com/content/07/introduction.html"
+                        },
+                        "date": "2025-10-23",
+                        "topic": "APIs and Scraping",
+                        "number": 9
+                    },
+                    "artifacts": {}
+                },
+                "lec10": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 7 - Collecting Data",
+                            "url": "https://notes.dsc80.com/content/07/introduction.html"
+                        },
+                        "date": "2025-10-28",
+                        "topic": "HTML and Scraping",
+                        "number": 10
+                    },
+                    "artifacts": {}
+                },
+                "lec11": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 8 - Information Extraction",
+                            "url": "https://notes.dsc80.com/content/08/introduction.html"
+                        },
+                        "date": "2025-10-30",
+                        "topic": "Regular Expressions",
+                        "number": 11
+                    },
+                    "artifacts": {}
+                },
+                "lec12": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 9 - Introduction to Features",
+                            "url": "https://notes.dsc80.com/content/09/introduction.html"
+                        },
+                        "date": "2025-11-04",
+                        "topic": "Text Features",
+                        "number": 12
+                    },
+                    "artifacts": {}
+                },
+                "lec13": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 9 - Introduction to Regression",
+                            "url": "https://notes.dsc80.com/content/09/introduction.html"
+                        },
+                        "date": "2025-11-13",
+                        "topic": "TF-IDF and Regression",
+                        "number": 13
+                    },
+                    "artifacts": {}
+                },
+                "lec14": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 9 - Introduction to Regression",
+                            "url": "https://notes.dsc80.com/content/09/introduction.html"
+                        },
+                        "date": "2025-11-18",
+                        "topic": "Feature Engineering",
+                        "number": 14
+                    },
+                    "artifacts": {}
+                },
+                "lec15": {
+                    "metadata": {
+                        "reading": {
+                            "title": "Chapter 9 - Data Pipelines",
+                            "url": "https://notes.dsc80.com/content/09/data-pipelines.html"
+                        },
+                        "date": "2025-11-20",
+                        "topic": "Pipelines and Model Validation",
+                        "number": 15
+                    },
+                    "artifacts": {}
+                },
+                "lec16": {
+                    "metadata": {
+                        "reading": null,
+                        "date": "2025-11-25",
+                        "topic": "Cross Validation",
+                        "number": 16
+                    },
+                    "artifacts": {}
+                },
+                "lec17": {
+                    "metadata": {
+                        "reading": null,
+                        "date": "2025-12-02",
+                        "topic": "Decision Trees",
+                        "number": 17
+                    },
+                    "artifacts": {}
+                }
+            }
+        },
+        "_exam_02/projects": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "required_keys": {
+                        "checkpoint_due": {
+                            "type": "datetime",
+                            "nullable": true
+                        },
+                        "checkpoint_released": {
+                            "type": "datetime"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "due": {
+                            "type": "datetime"
+                        },
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "number": {
+                            "type": "integer"
+                        }
+                    },
+                    "type": "dict"
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "proj01": {
+                    "metadata": {
+                        "checkpoint_due": "2025-10-09 23:59:00",
+                        "checkpoint_released": "2025-10-02 00:00:00",
+                        "topic": "Gradebook",
+                        "due": "2025-10-16 23:59:00",
+                        "released": "2025-10-02 00:00:00",
+                        "number": 1
+                    },
+                    "artifacts": {}
+                },
+                "proj02": {
+                    "metadata": {
+                        "checkpoint_due": "2025-10-23 23:59:00",
+                        "checkpoint_released": "2025-10-16 00:00:00",
+                        "topic": "Loan Applications",
+                        "due": "2025-10-30 23:59:00",
+                        "released": "2025-10-16 00:00:00",
+                        "number": 2
+                    },
+                    "artifacts": {}
+                },
+                "proj03": {
+                    "metadata": {
+                        "checkpoint_due": null,
+                        "checkpoint_released": "2025-10-30 00:00:00",
+                        "topic": "Language Models",
+                        "due": "2025-11-13 23:59:00",
+                        "released": "2025-10-30 00:00:00",
+                        "number": 3
+                    },
+                    "artifacts": {}
+                }
+            }
+        },
+        "_exam_02/discussions": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "assignment"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "required_keys": {
+                        "date": {
+                            "type": "datetime"
+                        },
+                        "due": {
+                            "type": "datetime"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "number": {
+                            "type": "integer"
+                        }
+                    },
+                    "type": "dict"
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {}
+        },
+        "_exam_02/worksheets": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "worksheet.pdf",
+                    "solutions.pdf"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "required_keys": {
+                        "date": {
+                            "type": "date"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "number": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01": {
+                    "metadata": {
+                        "date": "2025-09-30",
+                        "topic": "Pandas",
+                        "number": 1
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "_exam_02/worksheets/01/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "_exam_02/worksheets/01/solutions.pdf"
+                        }
+                    }
+                },
+                "02": {
+                    "metadata": {
+                        "date": "2025-10-07",
+                        "topic": "Aggregating",
+                        "number": 2
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "_exam_02/worksheets/02/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "_exam_02/worksheets/02/solutions.pdf"
+                        }
+                    }
+                },
+                "03": {
+                    "metadata": {
+                        "date": "2025-10-14",
+                        "topic": "Hypothesis Testing",
+                        "number": 3
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "_exam_02/worksheets/03/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "_exam_02/worksheets/03/solutions.pdf"
+                        }
+                    }
+                },
+                "04": {
+                    "metadata": {
+                        "date": "2025-10-21",
+                        "topic": "Missingness",
+                        "number": 4
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "_exam_02/worksheets/04/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "_exam_02/worksheets/04/solutions.pdf"
+                        }
+                    }
+                },
+                "05": {
+                    "metadata": {
+                        "date": "2025-10-28",
+                        "topic": "Imputation and Test Statistics",
+                        "number": 5
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "_exam_02/worksheets/05/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "_exam_02/worksheets/05/solutions.pdf"
+                        }
+                    }
+                },
+                "06": {
+                    "metadata": {
+                        "date": "2025-11-04",
+                        "topic": "HTML and Regex",
+                        "number": 6
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "_exam_02/worksheets/06/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "_exam_02/worksheets/06/solutions.pdf"
+                        }
+                    }
+                },
+                "07": {
+                    "metadata": {
+                        "date": "2025-11-11",
+                        "topic": "Models and Text Data",
+                        "number": 7
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "_exam_02/worksheets/07/worksheet.pdf"
+                        },
+                        "solutions.pdf": {
+                            "path": "_exam_02/worksheets/07/solutions.pdf"
+                        }
+                    }
+                },
+                "08": {
+                    "metadata": {
+                        "date": "2025-11-18",
+                        "topic": "Model Evaluation and Features",
+                        "number": 8
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "_exam_02/worksheets/08/worksheet.pdf"
+                        }
+                    }
+                },
+                "09": {
+                    "metadata": {
+                        "date": "2025-11-25",
+                        "topic": "More ML Models",
+                        "number": 9
+                    },
+                    "artifacts": {
+                        "worksheet.pdf": {
+                            "path": "_exam_02/worksheets/09/worksheet.pdf"
+                        }
+                    }
+                }
+            }
+        },
+        "_exam_02/labs": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "required_keys": {
+                        "topic": {
+                            "type": "string"
+                        },
+                        "due": {
+                            "type": "datetime"
+                        },
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "number": {
+                            "type": "integer"
+                        }
+                    },
+                    "type": "dict"
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "lab01": {
+                    "metadata": {
+                        "topic": "Introduction",
+                        "due": "2025-10-06 23:59:00",
+                        "released": "2025-09-26 00:00:00",
+                        "number": 1
+                    },
+                    "artifacts": {}
+                },
+                "lab02": {
+                    "metadata": {
+                        "topic": "Aggregation",
+                        "due": "2025-10-13 23:59:00",
+                        "released": "2025-09-29 00:00:00",
+                        "number": 2
+                    },
+                    "artifacts": {}
+                },
+                "lab03": {
+                    "metadata": {
+                        "topic": "Cleaning and Hypothesis Testing",
+                        "due": "2025-10-20 23:59:00",
+                        "released": "2025-10-06 00:00:00",
+                        "number": 3
+                    },
+                    "artifacts": {}
+                },
+                "lab04": {
+                    "metadata": {
+                        "topic": "Hypothesis and Permutation Testing",
+                        "due": "2025-10-27 23:59:00",
+                        "released": "2025-10-13 00:00:00",
+                        "number": 4
+                    },
+                    "artifacts": {}
+                },
+                "lab05": {
+                    "metadata": {
+                        "topic": "Missing Values and Imputation",
+                        "due": "2025-11-03 23:59:00",
+                        "released": "2025-10-20 00:00:00",
+                        "number": 5
+                    },
+                    "artifacts": {}
+                },
+                "lab06": {
+                    "metadata": {
+                        "topic": "APIs and Web Scraping",
+                        "due": "2025-11-10 23:59:00",
+                        "released": "2025-10-27 00:00:00",
+                        "number": 6
+                    },
+                    "artifacts": {}
+                },
+                "lab07": {
+                    "metadata": {
+                        "topic": "RegEx and Text Features",
+                        "due": "2025-11-17 23:59:00",
+                        "released": "2025-11-10 00:00:00",
+                        "number": 7
+                    },
+                    "artifacts": {}
+                },
+                "lab08": {
+                    "metadata": {
+                        "topic": "Feature Engineering",
+                        "due": "2025-11-24 23:59:00",
+                        "released": "2025-11-17 00:00:00",
+                        "number": 8
+                    },
+                    "artifacts": {}
                 }
             }
         },
